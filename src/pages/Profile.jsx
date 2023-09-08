@@ -26,7 +26,7 @@ function Profile() {
   const onSubmit = async () => {
     try {
       if (auth.currentUser.displayName !== name) {
-        // Update the display name
+        // Update the display name firebase
         await updateProfile(auth.currentUser, {
           displayName: name,
         });
@@ -39,7 +39,7 @@ function Profile() {
       console.log(error);
       toast.error("Couldn't update profile details");
     }
-  };
+  }; // update profile data in firebase and firestore
 
   const onChange = (e) => {
     setFormData((prevState) => ({

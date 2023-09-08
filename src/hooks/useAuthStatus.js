@@ -28,3 +28,4 @@ export const useAuthStatus = () => {
 // Custom hooks that aims to check if the user is logged in or not
 // with firebase and returns, stores two states (logged in and checked out)
 // to handle the entire process
+ 
